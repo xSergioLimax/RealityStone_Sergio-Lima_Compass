@@ -21,10 +21,7 @@ class Calculadora
           return divisao_calculada.round(1)
         
         else
-            puts "Divisão invalida!"
             return "Divisão invalida!"
         end
     end
-
-    
 end
