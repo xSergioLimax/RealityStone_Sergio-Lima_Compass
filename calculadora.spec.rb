@@ -129,4 +129,51 @@ describe ('Calculadora') do
     it ('Deve multiplicar qualquer número com 0') do
         expect(calculadora.multiplica(0, 9)).to eq 0
     end
-end   
+
+    # Apartir daqui testes relacionados a divisão
+
+    it ('Deve dividir dois inteiros positivos') do
+        expect(calculadora.divide(4, 5)).to eq 0
+    end
+
+    it ('Deve dividir inteiros positivos com inteiros negativos') do
+        expect(calculadora.divide(5, -8)).to eq -1
+    end
+
+    it ('Deve dividir inteiros positivos com decimais positivos') do
+        expect(calculadora.divide(8, 5.7)).to eq 1.4
+    end
+
+    it ('Deve dividir inteiros positivos com decimais negativos') do
+        expect(calculadora.divide(8, -3.6)).to eq -2.2
+    end
+
+    it ('Deve dividir dois decimais positivos') do
+        expect(calculadora.divide(1.6, 6.3)).to eq 0.3
+    end
+
+    it ('Deve dividir dois decimais negativos') do
+        expect(calculadora.divide(-4.2, -5.1)).to eq 0.8
+    end
+
+    it ('Deve dividir dois inteiros negativos') do
+        expect(calculadora.divide(-9, -10)).to eq 0
+    end
+
+    it ('Deve dividir inteiros negativos com decimais positivos') do
+        expect(calculadora.divide(-8, 8.4)).to eq -1.0
+    end
+
+    it ('Deve dividir inteiros negativos com decimais negativos') do
+        expect(calculadora.divide(-2, -5.4)).to eq 0.4
+    end
+
+    it ('Deve dividir o 0 por qualquer número') do
+        expect(calculadora.divide(0, 9)).to eq 0
+    end
+    
+    it ('Não deve dividir nenhum número por 0') do
+        expect(calculadora.divide(9, 0)).to eq 'Divisão invalida!'
+    end
+
+end
