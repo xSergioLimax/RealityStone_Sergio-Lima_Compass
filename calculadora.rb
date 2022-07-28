@@ -15,5 +15,16 @@ class Calculadora
     return multiplicacao_calculada.round(1)
     end
 
+    def divide(a, b)
+        if b != 0
+          divisao_calculada= a / b
+          return divisao_calculada.round(1)
+        
+        else
+            puts "Divisão invalida!"
+            return "Divisão invalida!"
+        end
+    end
+
     
 end
