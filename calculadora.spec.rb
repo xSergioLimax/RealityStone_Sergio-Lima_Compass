@@ -43,12 +43,47 @@ describe ('Calculadora') do
     it ('Deve somar qualquer número com 0') do
         expect(calculadora.soma(0, 9)).to eq 9
     end
- 
-    ------------------------------------------------------------------------------ 
     
-   
-    
-    
-    
-     
+    # Apartir daqui testes relacionados a subtração
+
+    it ('Deve subtrair dois inteiros positivos') do
+        expect(calculadora.subtrai(4, 5)).to eq -1
+    end
+
+    it ('Deve subtrair inteiros positivos com inteiros negativos') do
+        expect(calculadora.subtrai(5, -8)).to eq 13
+    end
+
+    it ('Deve subtrair inteiros positivos com decimais positivos') do
+        expect(calculadora.subtrai(8, 5.7)).to eq 2.3
+    end
+
+    it ('Deve subtrair inteiros positivos com decimais negativos') do
+        expect(calculadora.subtrai(8, -3.6)).to eq 11.6
+    end
+
+    it ('Deve subtrair dois decimais positivos') do
+        expect(calculadora.subtrai(1.6, 6.3)).to eq -4.7
+    end
+
+    it ('Deve subtrair dois decimais negativos') do
+        expect(calculadora.subtrai(-4.2, -5.1)).to eq 0.9
+    end
+
+    it ('Deve subtrair dois inteiros negativos') do
+        expect(calculadora.subtrai(-9, -10)).to eq 1
+    end
+
+    it ('Deve subtrair inteiros negativos com decimais positivos') do
+        expect(calculadora.subtrai(-8, 8.4)).to eq -16.4
+    end
+
+    it ('Deve subtrair inteiros negativos com decimais negativos') do
+        expect(calculadora.subtrai(-2, -5.4)).to eq 3.4
+    end
+
+    it ('Deve subtrair qualquer número com 0') do
+        expect(calculadora.subtrai(0, 9)).to eq -9
+    end
+
 end
