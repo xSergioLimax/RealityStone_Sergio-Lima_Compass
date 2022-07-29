@@ -45,5 +45,6 @@ Equipe de Scrum Masters da Compass
 - Evelise Teixeira de Freitas
 - Larissa Campos
 - Jacques de Jesus Figueredo Schmitz J.
+
 E aos demais colegas da turma RealityStone T03
 
